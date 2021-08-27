@@ -6,5 +6,4 @@
   "automerge": true,
   "prConcurrentLimit": 25,
   "timezone": "Europe/Rome",
-  // "schedule": "nonOfficeHours",
 }
