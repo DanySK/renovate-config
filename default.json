@@ -1,6 +1,6 @@
 {
   "extends": [
-    "config:base", ":rebaseStalePrs",
+    "config:base", ":rebaseStalePrs"
   ],
   "assignees": ["DanySK"],
   "automerge": true,
