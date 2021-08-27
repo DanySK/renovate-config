@@ -5,5 +5,6 @@
   "assignees": ["DanySK"],
   "automerge": true,
   "prConcurrentLimit": 25,
+  "prHourlyLimit": 0
   "timezone": "Europe/Rome",
 }
