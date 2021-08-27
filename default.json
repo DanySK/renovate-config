@@ -8,5 +8,5 @@
   "prConcurrentLimit": 25,
   "prHourlyLimit": 0,
   "schedule": "nonOfficeHours",
-  "timezone": "Europe/Rome",
+  "timezone": "Europe/Rome"
 }
