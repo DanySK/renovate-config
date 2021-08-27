@@ -1,8 +1,10 @@
 {
   "extends": [
-    "config:base", ":rebaseStalePrs"
+    "config:base", ":rebaseStalePrs",
   ],
   "assignees": ["DanySK"],
   "automerge": true,
-  "prConcurrentLimit": 25
+  "prConcurrentLimit": 25,
+  "timezone": "Europe/Rome",
+  // "schedule": "nonOfficeHours",
 }
