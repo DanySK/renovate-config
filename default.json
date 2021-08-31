@@ -5,6 +5,7 @@
   "assignees": ["DanySK"],
   "automerge": true,
   "dependencyDashboard": true,
+  "includeForks": true,
   "prConcurrentLimit": 25,
   "prHourlyLimit": 0
 }
