@@ -5,6 +5,9 @@
   "assignees": ["DanySK"],
   "automerge": true,
   "dependencyDashboard": true,
+  "git-submodules": {
+    "enabled": true
+  },
   "includeForks": true,
   "prConcurrentLimit": 25,
   "prHourlyLimit": 0
