@@ -11,7 +11,7 @@
         "org.jetbrains.kotlin.jvm",
         "org.jetbrains.dokka"
       ],
-      "semanticCommitType": "fix"
+      "semanticCommitScope": "core-deps"
     }
   ]
 }
