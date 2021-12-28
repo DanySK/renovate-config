@@ -7,7 +7,7 @@
     {
       "description": "Trigger a patch update if action.yml gets updated",
       "matchPaths": ["+(action.yml)"],
-      "semanticCommitType": "fix"
+      "semanticCommitScope": "core-deps"
     }
   ]
 }
