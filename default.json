@@ -13,7 +13,7 @@
   "packageRules": [
     {
       "description": "Wait one day before proposing updates",
-      "internalChecksFilter"="strict",
+      "internalChecksFilter": "strict",
       "stabilityDays": 1
     },
     {
