@@ -19,6 +19,7 @@
     {
       "description": "Wait three days for npm updates (npm retraction time)",
       "matchDatasources": ["npm"],
+      "internalChecksFilter": "strict",
       "stabilityDays": 3
     },
     {
