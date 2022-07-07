@@ -12,12 +12,12 @@
   "labels": ["dependencies"],
   "packageRules": [
     {
-      "description": "Wait one day before proposing updates"
-      "internalChecksFilter"="strict"
+      "description": "Wait one day before proposing updates",
+      "internalChecksFilter"="strict",
       "stabilityDays": 1
     },
     {
-      "description": "Wait three days for npm updates (npm retraction time)"
+      "description": "Wait three days for npm updates (npm retraction time)",
       "matchDatasources": ["npm"],
       "stabilityDays": 3
     },
