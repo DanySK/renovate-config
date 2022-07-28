@@ -1,6 +1,6 @@
 {
   "extends": [
-    "config:base", ":rebaseStalePrs", ":semanticCommits"
+    "config:base", ":rebaseStalePrs", ":semanticCommits", "semanticCommitTypeAll(chore)"
   ],
   "assignees": ["DanySK"],
   "automerge": true,
