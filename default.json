@@ -17,6 +17,12 @@
       "stabilityDays": 1
     },
     {
+      "description": "Wait thee days for hugo releases",
+      "matchPackageName": ["gohugoio/hugo"],
+      "internalChecksFilter": "strict",
+      "stabilityDays": 3
+    },
+    {
       "description": "Wait three days for npm updates (npm retraction time)",
       "matchDatasources": ["npm"],
       "internalChecksFilter": "strict",
