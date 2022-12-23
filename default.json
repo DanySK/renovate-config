@@ -36,6 +36,36 @@
   ],
   "prConcurrentLimit": 25,
   "prHourlyLimit": 0,
+    "regexManagers": [
+    {
+      "fileMatch": [
+        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
+        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
+      ],
+      "matchStrings": [
+          "\\s+hugo-version:\\s+'?\"?(?<version>\\d+(\\.\\d+)*)'?\"?"
+      ],
+      "depNameTemplate": "gohugoio/hugo",
+      "currentValueTemplate": "v{{{version}}}",
+      "packageNameTemplate": "gohugoio/hugo",
+      "datasourceTemplate": "github-tags",
+      "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": [
+        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
+        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
+      ],
+      "matchStrings": [
+          "\\s+node-version:\\s+'?\"?(?<version>\\d+(\\.\\d+)*)'?\"?"
+      ],
+      "depNameTemplate": "node",
+      "currentValueTemplate": "v{{{version}}}",
+      "packageNameTemplate": "nodejs/node",
+      "datasourceTemplate": "github-tags",
+      "versioningTemplate": "docker"
+    }
+  ],
   "separateMajorMinor": true,
   "separateMinorPatch": true,
   "separateMultipleMajor": true 
