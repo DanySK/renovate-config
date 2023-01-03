@@ -6,9 +6,8 @@
   "packageRules": [
     {
       "description": "Trigger a patch update on Kotlin upgrades",
-      "matchPackageNames": [
-        "org.jetbrains.kotlin.jvm",
-        "org.jetbrains.kotlin.js"
+      "matchPackagePrefixes": [
+        "org.jetbrains.kotlin"
       ],
       "semanticCommitScope": "core-deps"
     },
