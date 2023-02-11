@@ -12,7 +12,8 @@
   "labels": ["dependencies"],
   "packageRules": [
     {
-      "description": "Wait one day before proposing updates",
+      "description": "Wait one day before proposing updates to github refs",
+      "matchDatasources": ["git-refs"],
       "internalChecksFilter": "strict",
       "stabilityDays": 1
     },
