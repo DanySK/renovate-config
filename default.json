@@ -50,6 +50,7 @@
   "prConcurrentLimit": 25,
   "prCreation": "immediate",
   "prHourlyLimit": 0,
+  "rebaseWhen": "behind-base-branch",
   "regexManagers": [
     {
       "fileMatch": [
