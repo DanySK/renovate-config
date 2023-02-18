@@ -41,6 +41,14 @@
       "stabilityDays": 0
     },
     {
+      "description": "Do not wait for updates from github actions",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "internalChecksFilter": "strict",
+      "stabilityDays": 0
+    },
+    {
       "description": "Updates to GitHub Actions should be tagged as 'ci'",
       "matchPaths": [".github/workflows/*.yml", ".github/workflows/*.yaml"],
       "semanticCommitType": "ci"
