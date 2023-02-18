@@ -118,6 +118,7 @@
       "versioningTemplate": "docker"
     }
   ],
+  "prCreation": "immediate",
   "separateMajorMinor": true,
   "separateMinorPatch": true,
   "separateMultipleMajor": true 
