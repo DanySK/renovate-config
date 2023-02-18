@@ -48,6 +48,7 @@
     }
   ],
   "prConcurrentLimit": 25,
+  "prCreation": "immediate",
   "prHourlyLimit": 0,
   "regexManagers": [
     {
@@ -118,7 +119,6 @@
       "versioningTemplate": "docker"
     }
   ],
-  "prCreation": "immediate",
   "separateMajorMinor": true,
   "separateMinorPatch": true,
   "separateMultipleMajor": true 
