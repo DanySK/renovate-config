@@ -30,6 +30,12 @@
       "stabilityDays": 3
     },
     {
+      "description": "Do not wait for maven updates",
+      "matchDatasources": ["maven"],
+      "internalChecksFilter": "strict",
+      "stabilityDays": 0
+    },
+    {
       "description": "Updates to GitHub Actions should be tagged as 'ci'",
       "matchPaths": [".github/workflows/*.yml", ".github/workflows/*.yaml"],
       "semanticCommitType": "ci"
