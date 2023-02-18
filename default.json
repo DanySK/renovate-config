@@ -30,8 +30,13 @@
       "stabilityDays": 3
     },
     {
-      "description": "Do not wait for maven updates",
-      "matchDatasources": ["maven"],
+      "description": "Do not wait for updates from relatively stable sources",
+      "matchDatasources": [
+        "github-releases",
+        "github-tags",
+        "gradle-version",
+        "maven"
+      ],
       "internalChecksFilter": "strict",
       "stabilityDays": 0
     },
