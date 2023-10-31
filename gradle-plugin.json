@@ -9,7 +9,9 @@
       "matchPackageNames": [
         "gradle",
         "org.jetbrains.kotlin.jvm",
-        "org.jetbrains.dokka"
+        "org.jetbrains.dokka",
+        "org.jetbrains.kotlin:kotlin-gradle-plugin",
+        "kotlin-monorepo"
       ],
       "semanticCommitScope": "core-deps"
     }
