@@ -131,12 +131,24 @@
         "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
       ],
       "matchStrings": [
-          "ubuntu-(?<currentValue>\\d\\d)\\.04"
+          "(?<packageName>ubuntu)-(?<currentValue>\\d\\d\\.\\d\\d)"
       ],
       "depNameTemplate": "ubuntu github actions runner",
       "packageNameTemplate": "actions/runner-images",
-      "datasourceTemplate": "github-releases",
+      "datasourceTemplate": "github-runners",
       "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": [
+        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
+        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
+      ],
+      "matchStrings": [
+          "(?<packageName>ubuntu|windows|macos)-(?<currentValue>\\d+(\\.\\d+)?)"
+      ],
+      "depNameTemplate": "{{{ packageName }}} GitHub Actions runner",
+      "datasourceTemplate": "github-runners",
+      "versioningTemplate": "semver-coerced"
     }
   ],
   "separateMajorMinor": true,
