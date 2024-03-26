@@ -52,18 +52,6 @@
       "description": "Updates to GitHub Actions should be tagged as 'ci'",
       "matchPaths": [".github/workflows/*.yml", ".github/workflows/*.yaml"],
       "semanticCommitType": "ci"
-    },
-    {
-      "matchDepNames": "windows github actions runner",
-      "extractVersion": "^win(?<version>\\d\\d)\/\\d+.\\.\\d+$"
-    },
-    {
-      "matchDepNames": "macos github actions runner",
-      "extractVersion": "^mac[Oo][Ss]-(?<version>\\d\\d)\/\\d+.\\.\\d+$"
-    },
-    {
-      "matchDepNames": "ubuntu github actions runner",
-      "extractVersion": "^ubuntu(?<version>\\d\\d)\/\\d+.\\.\\d+$"
     }
   ],
   "prConcurrentLimit": 25,
@@ -97,45 +85,6 @@
       "currentValueTemplate": "v{{{version}}}",
       "packageNameTemplate": "nodejs/node",
       "datasourceTemplate": "github-tags",
-      "versioningTemplate": "docker"
-    },
-    {
-      "fileMatch": [
-        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
-        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
-      ],
-      "matchStrings": [
-          "windows-\\d\\d(?<currentValue>\\d\\d)"
-      ],
-      "depNameTemplate": "windows github actions runner",
-      "packageNameTemplate": "actions/runner-images",
-      "datasourceTemplate": "github-releases",
-      "versioningTemplate": "docker"
-    },
-    {
-      "fileMatch": [
-        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
-        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
-      ],
-      "matchStrings": [
-          "macos-(?<currentValue>\\d\\d)"
-      ],
-      "depNameTemplate": "macos github actions runner",
-      "packageNameTemplate": "actions/runner-images",
-      "datasourceTemplate": "github-releases",
-      "versioningTemplate": "docker"
-    },
-    {
-      "fileMatch": [
-        "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
-        "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
-      ],
-      "matchStrings": [
-          "(?<packageName>ubuntu)-(?<currentValue>\\d\\d\\.\\d\\d)"
-      ],
-      "depNameTemplate": "ubuntu github actions runner",
-      "packageNameTemplate": "actions/runner-images",
-      "datasourceTemplate": "github-runners",
       "versioningTemplate": "docker"
     },
     {
