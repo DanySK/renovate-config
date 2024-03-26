@@ -59,7 +59,7 @@
     },
     {
       "matchDepNames": "macos github actions runner",
-      "extractVersion": "^macOS-(?<version>\\d\\d)\/\\d+.\\.\\d+$"
+      "extractVersion": "^mac[Oo][Ss]-(?<version>\\d\\d)\/\\d+.\\.\\d+$"
     },
     {
       "matchDepNames": "ubuntu github actions runner",
