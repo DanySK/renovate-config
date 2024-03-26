@@ -97,7 +97,7 @@
       ],
       "depNameTemplate": "{{{ packageName }}} GitHub Actions runner",
       "datasourceTemplate": "github-runners",
-      "versioningTemplate": "semver-coerced"
+      "versioningTemplate": "loose"
     }
   ],
   "separateMajorMinor": true,
