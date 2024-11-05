@@ -7,14 +7,14 @@
     {
       "description": "Trigger a patch update on Kotlin upgrades",
       "matchPackageNames": [
-        "/^org\\.jetbrains\\.kotlin.*"
+        "/^org\\.jetbrains\\.kotlin.*/"
       ],
       "semanticCommitScope": "core-deps"
     },
     {
       "description": "Dokka updates have docs type",
       "matchPackageNames": [
-        "/^org\\.jetbrains\\.dokka.*"
+        "/^org\\.jetbrains\\.dokka.*/"
       ],
       "semanticCommitType": "docs"
     }
