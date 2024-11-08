@@ -6,7 +6,9 @@
   "packageRules": [
     {
       "description": "Trigger a patch update if any Dockerfile gets updated",
-      "matchPaths": ["Dockerfile"],
+      "matchFileNames": [
+        "**/Dockerfile"
+      ],
       "semanticCommitScope": "core-deps"
     }
   ]
