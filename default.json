@@ -58,8 +58,9 @@
   "prCreation": "immediate",
   "prHourlyLimit": 0,
   "rebaseWhen": "behind-base-branch",
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": [
         "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
         "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
@@ -74,6 +75,7 @@
       "versioningTemplate": "docker"
     },
     {
+      "customType": "regex",
       "fileMatch": [
         "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
         "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
@@ -88,6 +90,7 @@
       "versioningTemplate": "docker"
     },
     {
+      "customType": "regex",
       "fileMatch": [
         "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.[Yy][Aa]?[Mm][Ll]$",
         "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
