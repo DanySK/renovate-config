@@ -2,6 +2,9 @@
   "extends": [
     "config:base", ":rebaseStalePrs", ":semanticCommits", ":semanticCommitTypeAll(chore)"
   ],
+  "ignorePresets": [
+     "workarounds:javaLTSVersions"
+  ],
   "assignees": ["DanySK"],
   "automerge": true,
   "dependencyDashboard": true,
@@ -101,6 +104,20 @@
       "depNameTemplate": "{{{ packageName }}} GitHub Actions runner",
       "datasourceTemplate": "github-runners",
       "versioningTemplate": "loose"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [
+         "(^|/).java-version$"
+      ],
+      "matchStrings": [
+         "(?<version>\\d+(\\.\\d+)*.*)"
+      ],
+      "depNameTemplate": "Java",
+      "currentValueTemplate": "{{{version}}}",
+      "packageNameTemplate": "Java",
+      "datasourceTemplate": "java-version",
+      "versioningTemplate": "semver-coerced"
     }
   ],
   "separateMajorMinor": true,
