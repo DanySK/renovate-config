@@ -123,5 +123,6 @@
   "separateMajorMinor": true,
   "separateMinorPatch": true,
   "separateMultipleMajor": true,
+  "separateMultipleMinor": true,
   "stabilityDays": 0
 }
