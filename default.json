@@ -75,8 +75,7 @@
       "currentValueTemplate": "v{{{version}}}",
       "packageNameTemplate": "gohugoio/hugo",
       "datasourceTemplate": "github-tags",
-      "versioningTemplate": "semver-coerced",
-      "pinDigests": false
+      "versioningTemplate": "semver-coerced"
     },
     {
       "customType": "regex",
@@ -91,8 +90,7 @@
       "currentValueTemplate": "v{{{version}}}",
       "packageNameTemplate": "nodejs/node",
       "datasourceTemplate": "github-tags",
-      "versioningTemplate": "docker",
-      "pinDigests": false
+      "versioningTemplate": "docker"
     },
     {
       "customType": "regex",
