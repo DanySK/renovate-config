@@ -91,7 +91,7 @@
       "currentValueTemplate": "v{{{version}}}",
       "packageNameTemplate": "nodejs/node",
       "datasourceTemplate": "github-tags",
-      "versioningTemplate": "docker"
+      "versioningTemplate": "docker",
       "pinDigests": false
     },
     {
