@@ -75,7 +75,7 @@
       "currentValueTemplate": "v{{{version}}}",
       "packageNameTemplate": "gohugoio/hugo",
       "datasourceTemplate": "github-tags",
-      "versioningTemplate": "docker"
+      "versioningTemplate": "semver-coerced"
     },
     {
       "customType": "regex",
