@@ -71,7 +71,7 @@
       "matchStrings": [
           "\\s+hugo-version:\\s+'?\"?(?<version>\\d+(\\.\\d+)*)'?\"?"
       ],
-      "depNameTemplate": "gohugoio/hugo",
+      "depNameTemplate": "hugo",
       "currentValueTemplate": "v{{{version}}}",
       "packageNameTemplate": "gohugoio/hugo",
       "datasourceTemplate": "github-tags",
