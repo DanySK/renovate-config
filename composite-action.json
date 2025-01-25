@@ -3,6 +3,7 @@
   "extends": [
     "local>DanySK/renovate-config"
   ],
+  "includeForks": true,
   "packageRules": [
     {
       "description": "Trigger a patch update if action.yml gets updated",
