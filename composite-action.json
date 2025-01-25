@@ -4,6 +4,7 @@
     "local>DanySK/renovate-config"
   ],
   "includeForks": true,
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "description": "Trigger a patch update if action.yml gets updated",
