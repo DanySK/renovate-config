@@ -69,10 +69,10 @@
         "(^|\\/)action\\.[Yy][Aa]?[Mm][Ll]$"
       ],
       "matchStrings": [
-          "^\\s+hugo-version:\\s+['\"]?(?<version>\\d+(\\.\\d+)*)['\"]?$"
+          "\\s+hugo-version\\s*:\\s+['\"]?(?<version>\\d+(\\.\\d+)*)['\"]?\\s*"
       ],
       "depNameTemplate": "hugo",
-      "currentValueTemplate": "v{{{version}}}",
+      "currentValueTemplate": "{{{version}}}",
       "packageNameTemplate": "gohugoio/hugo",
       "datasourceTemplate": "github-tags",
       "versioningTemplate": "semver-coerced"
