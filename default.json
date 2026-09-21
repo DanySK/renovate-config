@@ -11,6 +11,9 @@
   "git-submodules": {
     "enabled": true
   },
+  "gitIgnoredAuthors": [
+    "113355583+pianinator@users.noreply.github.com"
+  ],
   "includeForks": true,
   "labels": ["dependencies"],
   "packageRules": [
